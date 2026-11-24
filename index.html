@@ -22,4 +22,343 @@
     document.documentElement.classList.add('js');
   </script>
 </head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#top" class="brand">Hans Peter Widiadi</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Surabaya, Indonesia • Game Technology @ PENS</p>
+        <h1>Game Programmer &amp; Graphic Designer crafting interactive systems and visual media.</h1>
+        <p class="hero-subtitle">
+          Undergraduate Game Technology student at Politeknik Elektronika Negeri Surabaya (PENS), specializing in Unity (C#) gameplay architecture, hardware-integrated controllers, and multimedia design.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Selected Works</a>
+          <a href="https://github.com/Sologice" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub (@Sologice)</a>
+          <a href="https://linkedin.com/in/hans-peter-widiadi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <!-- Replace with your own portrait in assets/ -->
+        <div class="portrait-frame">
+          <img src="assets/profile.jpg" alt="Hans Peter Widiadi" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder-fallback');">
+          <div class="portrait-placeholder">HPW</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & Game Jams -->
+    <section id="projects" class="section container">
+      <div class="section-header reveal">
+        <span class="section-index">01</span>
+        <h2>Projects &amp; Game Jams</h2>
+        <div class="filter-bar" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="unity">Unity / C#</button>
+          <button class="filter-btn" data-filter="hardware">Hardware / IoT</button>
+          <button class="filter-btn" data-filter="3d">3D &amp; UI Art</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Altalis -->
+        <article class="project-card reveal" data-tags="unity">
+          <div class="project-thumb">
+            <img src="assets/work-altalis-01.jpg" alt="Altalis Steam Demo" loading="lazy">
+            <span class="project-date">Aug 2025</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">College Game Project (Steam Demo)</div>
+            <h3>Altalis</h3>
+            <p class="project-role">Game Programmer &amp; Marketing</p>
+            <ul class="project-bullets">
+              <li>Programmed 2D Metroidvania mechanics, user interfaces, and responsive player controls.</li>
+              <li>Implemented Input Systems supporting multiple device integrations and Steamworks SDK.</li>
+              <li>Polished player movement feel and edited promotional videos and event graphics.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Unity Engine</span>
+              <span>C#</span>
+              <span>Steamworks SDK</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Flame Fighter -->
+        <article class="project-card reveal" data-tags="unity hardware">
+          <div class="project-thumb">
+            <img src="assets/work-flame-01.jpg" alt="Flame Fighter" loading="lazy">
+            <span class="project-date">Aug 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">College Game Project</div>
+            <h3>Flame Fighter</h3>
+            <p class="project-role">Game Programmer</p>
+            <ul class="project-bullets">
+              <li>Programmed 3D targeting mechanics, user interfaces, and player controls in Unity.</li>
+              <li>Integrated custom physical input systems using an ADXL345 accelerometer gyroscope and Arduino Uno.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Unity Engine</span>
+              <span>C#</span>
+              <span>Arduino Uno</span>
+              <span>ADXL345</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Ultimate Pong -->
+        <article class="project-card reveal" data-tags="unity 3d">
+          <div class="project-thumb">
+            <img src="assets/work-pong-01.jpg" alt="Ultimate Pong" loading="lazy">
+            <span class="project-date">Aug 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">College Game Project</div>
+            <h3>Ultimate Pong</h3>
+            <p class="project-role">Game Programmer &amp; 2D UI Artist</p>
+            <ul class="project-bullets">
+              <li>Programmed fast-paced 2D arcade ping pong mechanics, power-ups, and custom UI layouts.</li>
+              <li>Implemented network architecture for live high scores and online leaderboards, tested via Postman.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Unity Engine</span>
+              <span>C#</span>
+              <span>Postman</span>
+              <span>2D UI Art</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: 2 Present Th3 Past -->
+        <article class="project-card reveal" data-tags="unity 3d">
+          <div class="project-thumb">
+            <img src="assets/work-spacejam-01.jpg" alt="2 Present Th3 Past" loading="lazy">
+            <span class="project-date">May 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">SpaceJam 2026</div>
+            <h3>2 Present Th3 Past</h3>
+            <p class="project-role">Game Programmer</p>
+            <ul class="project-bullets">
+              <li>Programmed dual 2D &amp; 3D point-of-view puzzle mechanics, interfaces, and player controls.</li>
+              <li>Engineered seamless dimensional transitions between 2D and 3D movement states.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Unity Engine</span>
+              <span>C#</span>
+              <span>2D/3D Hybrid</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Sea Fighter -->
+        <article class="project-card reveal" data-tags="unity hardware">
+          <div class="project-thumb">
+            <img src="assets/work-seafighter-01.jpg" alt="Sea Fighter" loading="lazy">
+            <span class="project-date">Feb 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">College Game Project</div>
+            <h3>Sea Fighter</h3>
+            <p class="project-role">Game Programmer</p>
+            <ul class="project-bullets">
+              <li>Programmed 2D racing mechanics, user interfaces, and player controls.</li>
+              <li>Built wireless motion controls combining ADXL345 gyroscope sensors, NodeMCU, and Arduino Uno.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Unity Engine</span>
+              <span>C#</span>
+              <span>NodeMCU</span>
+              <span>ADXL345</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Carrot Rain -->
+        <article class="project-card reveal" data-tags="unity 3d">
+          <div class="project-thumb">
+            <img src="assets/work-carrotrain-01.jpg" alt="Carrot Rain" loading="lazy">
+            <span class="project-date">Feb 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">College Game Project</div>
+            <h3>Carrot Rain</h3>
+            <p class="project-role">Game Programmer &amp; 3D Artist</p>
+            <ul class="project-bullets">
+              <li>Programmed 3D catching and cooking gameplay loops in Unity.</li>
+              <li>Modeled and textured 3D environment props and designed user interface assets in Blender.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Unity Engine</span>
+              <span>C#</span>
+              <span>Blender</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Organizational Experiences -->
+    <section id="experience" class="section container">
+      <div class="section-header reveal">
+        <span class="section-index">02</span>
+        <h2>Organizational Experiences</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-period">2024 – 2028</div>
+          <div class="timeline-content">
+            <h3>Youth Commission Multimedia Division Organizer</h3>
+            <p class="timeline-org">Gereja Kristen Indonesia (GKI) Manyar Surabaya • Church Organization</p>
+            <ul>
+              <li>Operated live presentation systems for weekly youth services.</li>
+              <li>Coordinated with division members on presentation preparation and media playback.</li>
+              <li>Collaborated with the Worship Division on schedule management and team coordination.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-period">2024 – 2026</div>
+          <div class="timeline-content">
+            <h3>Design &amp; Creative Division Coordinator (2025–2026) &amp; Member (2024–2025)</h3>
+            <p class="timeline-org">Unit Kerohanian Kristen Katolik (UK3) PENS • Campus Organization</p>
+            <ul>
+              <li>Designed posters and managed presentation operations for weekly campus fellowships.</li>
+              <li>Created complete visual branding for Retreat UK3 PENS 2025: posters, banners, cue cards, social media live-report frames, thumbnails, photo recaps, and thank-you cards.</li>
+              <li>Coordinated division members on presentation preparation and live media playback.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-period">2025</div>
+          <div class="timeline-content">
+            <h3>Publication, Documentation &amp; Design Division Member</h3>
+            <p class="timeline-org">Persekutuan Doa Gabungan Surabaya • Multi-Campus Committee</p>
+            <ul>
+              <li>Designed promotional event service posters and operated live presentation visuals.</li>
+              <li>Collaborated with the Event Division on multi-campus social media content planning.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical & Creative Skills -->
+    <section id="skills" class="section container">
+      <div class="section-header reveal">
+        <span class="section-index">03</span>
+        <h2>Technical &amp; Creative Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>Game Development</h3>
+          <div class="tag-list">
+            <span>Unity Engine</span>
+            <span>C#</span>
+            <span>C++</span>
+            <span>SQL</span>
+            <span>GitHub</span>
+            <span>Arduino / NodeMCU</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Graphic Design</h3>
+          <div class="tag-list">
+            <span>Adobe Photoshop</span>
+            <span>Adobe Illustrator</span>
+            <span>Affinity</span>
+            <span>Canva</span>
+            <span>Blender</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Video &amp; Live Presentation</h3>
+          <div class="tag-list">
+            <span>Adobe Premiere Pro</span>
+            <span>DaVinci Resolve</span>
+            <span>ProPresenter</span>
+            <span>FreeShow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section container">
+      <div class="section-header reveal">
+        <span class="section-index">04</span>
+        <h2>Education</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="edu-year">Expected 2028</span>
+          <h3>Politeknik Elektronika Negeri Surabaya (PENS)</h3>
+          <p>D4 / S.Tr. Game Technology</p>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-year">Graduated 2024</span>
+          <h3>SMA Katolik St. Hendrikus</h3>
+          <p>Mathematics &amp; Natural Sciences</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Let’s build games or visual experiences together.</h2>
+        </div>
+        <a href="mailto:hpaentser.50@gmail.com" class="btn btn-primary">hpaentser.50@gmail.com</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Hans Peter Widiadi • Surabaya, Indonesia</p>
+        <div class="footer-links">
+          <a href="tel:+6285655420310">+62 856-5542-0310</a>
+          <a href="https://linkedin.com/in/hans-peter-widiadi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/Sologice" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Project Images -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close preview">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
